@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 300px 0;
+
+  h1 {
+    font-size: 4rem;
+    line-height: 5.125rem;
+    font-weight: 600;
+
+    width: 100%;
+    max-width: 495px;
+    margin-bottom: 2.5rem;
+
+    span {
+      color: var(--secondary);
+    }
+  }
+
+  p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: var(--terciary);
+    
+    max-width: 570px;
+    width: 100%;
+  }
+
+  img {
+    width: 500px;
+    height: 347px;
+  }
+}

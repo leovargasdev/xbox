@@ -1,7 +1,10 @@
 import Head from 'next/head'
 
-import styles from 'styles/home.module.scss'
 import { BannerHero } from 'components/BannerHero'
+import { Info } from 'components/Info'
+import { Games } from 'components/Games'
+
+import styles from 'styles/home.module.scss'
 
 export default function Home() {
   return (
@@ -11,12 +14,8 @@ export default function Home() {
       </Head>
 
       <BannerHero />
-
-      <section>
-        <h1>olar</h1>
-      </section>
-
-      <div style={{ width: '100%' }}>images images images images</div>
+      <Info />
+      <Games />
     </div>
   )
 }
