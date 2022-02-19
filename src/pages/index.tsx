@@ -12,14 +12,14 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>xBox</title>
+        <title>Xbox</title>
       </Head>
 
       <BannerHero />
-      <Info />
+      {/* <Info />
       <Games />
       <Questions />
-      <Footer />
+      <Footer /> */}
     </div>
   )
 }
