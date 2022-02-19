@@ -16,10 +16,10 @@ export default function Home() {
       </Head>
 
       <BannerHero />
-      {/* <Info />
+      <Info />
       <Games />
       <Questions />
-      <Footer /> */}
+      <Footer />
     </div>
   )
 }

@@ -23,4 +23,26 @@
       text-decoration: underline;
     }
   }
+
+  @media(max-width: 650px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    h4, a {
+      text-align: right;
+      font-size: 0.75rem;
+      line-height: 1rem;
+      margin: 0;
+    }
+
+    h4 {
+      align-self: flex-end;
+    }
+
+    img {
+      width: auto;
+      height: 36px;
+      grid-row: 1 / 3;
+    }
+  }
 }

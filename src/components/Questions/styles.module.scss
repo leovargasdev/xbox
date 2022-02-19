@@ -16,6 +16,23 @@
       color: var(--secondary);
     }
   }
+
+  @media(max-width: 768px) {
+    padding: 5rem 2rem 1rem;
+   
+    h1 {
+      font-size: 2.5rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  @media(max-width: 650px) {
+    h1 {
+      font-size: 1.625rem;
+      line-height: 2rem;
+      margin-bottom: 2.5rem;
+    }
+  }
 }
 
 .content {
@@ -70,6 +87,48 @@
 
     padding-left: 2rem;
     margin-top: 2.25rem;
+  }
+
+  @media(max-width: 768px) {
+
+    strong {
+      font-size: 1.25rem;
+      line-height: 2rem;
+    }
+  
+    p {
+      padding-left: 1.5rem;
+      margin-top: 2.25rem;
+    }
+  }
+
+  @media(max-width: 650px) {
+    row-gap: 1rem;
+
+    li {
+      overflow: hidden;
+      max-height: 54px;
+      
+      &:not(:first-child) {
+        max-height: 72px;
+      }
+    }
+
+    strong {
+      font-size: 1rem;
+      line-height: 1.375rem;
+      
+      svg {
+        width: 1rem;
+        margin-left: 3.5rem;
+      }
+    }
+  
+    p {
+      font-size: 0.75rem;
+      padding-left: 0.5rem;
+      margin-top: 1rem;
+    }
   }
 
   li.active {
