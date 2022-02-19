@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 5rem 0;
+
+  img {
+    width: 144px;
+    height: 44px;
+    margin-right: auto;
+  }
+
+  h4, a {
+    font-weight: 400;
+    color: var(--quartenary);
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  a {
+    margin-left: 3.5rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
