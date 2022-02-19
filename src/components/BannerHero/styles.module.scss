@@ -12,7 +12,13 @@
     font-size: 4.5rem;
     line-height: 5.125rem;
     font-weight: 600;
+
+    @media(max-width: 650px) {
+      font-size: 3.5rem;
+      line-height: 4rem;
+    }
   }
+
 }
 
 .content {
@@ -52,5 +58,27 @@
     width: 1235px;
     height: 597px;
     z-index: 2;
+  }
+
+  @media(max-width: 768px) {
+    > img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media(max-width: 650px) {
+    margin-top: 0.5rem;
+
+    h2 {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    > img {
+      width: 135%;
+      height: auto;
+    }
   }
 }

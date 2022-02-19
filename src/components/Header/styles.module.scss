@@ -8,6 +8,11 @@
   img {
     width: 144px;
     height: 44px;
+
+    @media(max-width: 650px) {
+      width: auto;
+      height: 30px;
+    }
   }
 }
 
