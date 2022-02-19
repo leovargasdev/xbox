@@ -15,19 +15,21 @@ html {
 }
 
 :root {
-  --background: #f5f6fa;
+  --background: #0C0C0C;
 
-  --primary: #373D4F;
-  --secondary: #9098AE;
+  --primary: #FFF;
+  --secondary: #9BF00B;
+  --terciary: #C0C0C0;
+  --quartenary : #777;
 }
-
+ 
 body {
   background: var(--background);
 }
 
 body, button, textarea, input {
   color: var(--primary);
-  font: 400 1rem "Roboto", sans-serif;
+  font: 400 1rem "Inter", sans-serif;
 }
 
 a {
