@@ -4,7 +4,11 @@ import { FaChevronDown } from 'react-icons/fa'
 import styles from './styles.module.scss'
 
 export const Questions = () => {
-  const [activeQuestion, setActiveQuestion] = useState<number>(-1)
+  const [activeQuestion, setActiveQuestion] = useState<number>(1)
+
+  const handleActiveQuestion = questionId => {
+    setActiveQuestion(state => (state === questionId ? -1 : questionId))
+  }
 
   return (
     <section className={styles.container}>
@@ -14,7 +18,7 @@ export const Questions = () => {
 
       <ul className={styles.content}>
         <li
-          onClick={() => setActiveQuestion(1)}
+          onClick={() => handleActiveQuestion(1)}
           className={activeQuestion === 1 ? styles.active : ''}
         >
           <strong>
@@ -24,7 +28,7 @@ export const Questions = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </li>
         <li
-          onClick={() => setActiveQuestion(2)}
+          onClick={() => handleActiveQuestion(2)}
           className={activeQuestion === 2 ? styles.active : ''}
         >
           <strong>
@@ -34,7 +38,7 @@ export const Questions = () => {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </li>
         <li
-          onClick={() => setActiveQuestion(3)}
+          onClick={() => handleActiveQuestion(3)}
           className={activeQuestion === 3 ? styles.active : ''}
         >
           <strong>
